@@ -70,6 +70,7 @@ body{
 }
 
 .btn {
+  cursor: pointer;
   padding: 10px 18px;
   font-family: 'Lexend Deca', sans-serif;
   background-color: #fff;
