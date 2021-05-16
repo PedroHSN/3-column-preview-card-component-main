@@ -8,6 +8,15 @@ body{
   background-color: hsl(0, 0%, 95%);
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /*Container*/
 
 #container{
@@ -83,15 +92,32 @@ body{
   color: hsl(179, 100%, 13%);
 }
 
+/*Media Query*/
 
+@media only screen and (max-width: 600px){
+  #container {
+    flex-direction: column;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+  }
 
+  .card {
+    border-radius: 0 !important;
+    height: 400px !important;
+  }
 
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
+  /*First Card*/
+.card:nth-last-of-type(3){
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  /*Thired Card*/
+.card:nth-last-of-type(1){
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
 }
+}
+
+
+
